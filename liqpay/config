@@ -1,0 +1,17 @@
+[mysql]
+host: localhost
+user: abills
+dbname: abills
+password: osipenkoNETltd
+
+[billing]
+operator_id: 16
+type: 9
+
+[liqpay]
+commission: 2.75
+server_url: kompot.uz.ua/liqpay/liqpay.py
+public_key = i58071070059
+your_site = www.kompot.uz.ua
+remote_ipaddr1 = 54.229.105.178
+remote_ipaddr2 = 54.229.105.179

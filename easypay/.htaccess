@@ -1,0 +1,10 @@
+<Files config>
+Options -Indexes
+
+Order Deny,Allow
+Deny from All
+</Files>
+
+
+
+
