@@ -14,9 +14,6 @@ get_header();
         <div class="wrapper">
 
             <div id="about" class="main__about">
-<!--                <div class="about__left">-->
-<!--                    <img class="mw-100" src="--><?//= get_template_directory_uri(); ?><!--/public/img/about-img-003.jpg" alt="lan">-->
-<!--                </div>-->
                 <div class="about__right">
                     <h1>ДЕКІЛЬКА СЛІВ <b>ПРО НАС</b></h1>
                     <p>КОМПОТ - це ліцензований Інтернет провайдер міста Ужгород, який пропонує телекомунікаційні

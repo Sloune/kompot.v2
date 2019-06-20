@@ -1,20 +1,17 @@
 <?php
 
-if((isset($_POST['call-name']))&&(isset($_POST['phone'])&&$_POST['phone']!="")){
-    $to = 'test@gmail.com';
-    $subject = 'Callback';
+if ((isset($_POST['call-name'])) && (isset($_POST['phone']) && $_POST['phone'] != "")) {
+    $to = 'kompot.uz.ua@gmail.com';
+    $subject = 'Замовлення на підключення по '.$_POST['street'].' вiд '.$_POST['call-name'].' | КОМПОТ-контактна-форма';
     $message = '
-<html>
-<head>
-    <title>Call me back</title>
-</head>
-<body>
-<p><b>Name:</b> '.$_POST['call-name'].'</p>
-<p><b>Phonenum:</b> '.$_POST['phone'].'</p>
-</body>
-</html>';
-    $headers  = "Content-type: text/html; charset=utf-8 \r\n";
-    $headers .= "From: Site <info@mail.com>\r\n";
+Від: ' . $_POST['call-name'] . "<br>".'
+Email: ' . $_POST['email'] . "<br>".'
+Телефон: ' . $_POST['phone'] . "<br><hr>".'
+Вул: ' . $_POST['street'] . "<br>".'
+Буд №: ' . $_POST['number'] . "<br>".'
+Квартира №: ' . $_POST['app'] . "<br><hr>".$_POST['message'];
+    $headers = "Content-type: text/html; charset=utf-8 \r\n";
+    $headers .= "From: Компот <admin@kompot.uz.ua>\r\n";
     mail($to, $subject, $message, $headers);
 
     echo json_encode(array('status' => 'success'));

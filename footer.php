@@ -18,9 +18,11 @@
                 </div>
             </div>
             <div class="col xs-3">
-                        <a href="#win1" class="btn btn-primary">Замовити дзвінок</a>
-                        <a href="#win2" class="btn btn-primary">Замовити підключення</a>
-                <a class="btn btn-social" title="Facebook" target="_blank" href="https://www.facebook.com/KompotISP/?fref=ts"><i class="socicon socicon-facebook"></i></a>
+                <a href="#win1" class="btn btn-primary">Замовити дзвінок</a>
+                <br>
+                <a href="#win2" class="btn btn-primary">Замовити підключення</a>
+                <a class="btn btn-social aligncenter" title="Facebook" target="_blank"
+                   href="https://www.facebook.com/KompotISP/?fref=ts"><i class="socicon socicon-facebook"></i></a>
                 <a href="#x" class="overlay" id="win1"></a>
                 <div class="popup">
                     <form id="free-call-form" name="freeCall" method="post" action="">
@@ -31,12 +33,16 @@
                                 <label for="name1">Ваше ім'я *</label>
                                 <input name="call-name" type="text" id="name1" placeholder="Ім'я" required>
                             </div>
+                            <br>
                             <div class="row">
                                 <label for="phonenumber">Ваш телефон *</label>
-                                <input name="phonenumber" type="text" value="" placeholder="+380" id="phone" required>
+                                <input name="phonenumber" type="text" value="" placeholder="+380" id="phonenumber"
+                                       required>
                             </div>
+                            <br>
                             <div class="row">
-                                <input type="submit" name="submit" id="btn" class="btn" value="Надіслати">
+                                <input type="submit" name="submit" id="btn" class="btn btn-primary aligncenter"
+                                       value="Надіслати">
                             </div>
                         </div>
                     </form>
@@ -45,42 +51,41 @@
                 <a href="#x" class="overlay" id="win2"></a>
                 <div class="popup">
                     <form id="free-order-form" name="freeOrder" method="post" action="">
-                        <div class="col">
+                        <div class="row">
                             <h1>Надішліть нам повідомлення і ми зв'яжемось з Вами.</h1>
                             <h2 class="aligncenter" id="response"></h2>
-                            <div class="row">
-                                <label for="name">Ваше ім'я*</label>
-                                <input name="call-name" id="name" type="text" required>
+                            <div class="col">
+                                <input name="call-name" id="name" type="text" placeholder="Ваше ім'я*" required>
 
-                                <label for="email">Ваш Email*</label>
-                                <input name="email" id="email" type="email" required>
-                            </div>
-                            <div class="row">
-                                <label for="phone">Ваш телефон*</label>
-                                <input name="phone" id="phone" type="text" required>
-
-                                <label for="street">Вулиця*</label>
-                                <input name="street" id="street" type="text" required>
-                            </div>
-                            <div class="row">
-                                <label for="number">№ будинку*</label>
-                                <input name="number" id="number" type="text" required>
-
-                                <label for="app">№ квартири</label>
-                                <input name="app" id="app" type="text">
+                                <input name="email" id="email" type="email" placeholder="Ваш Email*" required>
                             </div>
                             <br>
-                            <label for="message">Ваше повідомлення</label>
-                            <textarea id="message" rows="4" cols="50" name="message" form="free-order-form"></textarea>
+
+                            <div class="col">
+                                <input name="phone" id="phone" type="tel" placeholder="Ваш телефон*" required>
+
+                                <input name="street" id="street" type="text" placeholder="Вулиця*" required>
+                            </div>
+                            <br>
+
+                            <div class="col">
+                                <input name="number" id="number" type="number" placeholder="№ будинку*" required>
+
+                                <input name="app" id="app" type="number" placeholder="№ квартири">
+                            </div>
+                            <br>
+                            <textarea id="message" rows="4" cols="50" name="message" form="free-order-form"
+                                      placeholder="Текст повідомлення"></textarea>
                             <div class="row">
-                                <input type="submit" name="submit" class="btn" value="Надіслати">
+                                <input type="submit" name="submit" class="btn btn-primary aligncenter"
+                                       value="Надіслати">
                             </div>
                         </div>
                     </form>
                     <a class="close" title="Закрыть" href="#close"></a>
                 </div>
             </div>
-            <div class="col xs-3">
+            <div class="col xs-3 alignright">
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5274.035227087525!2d22.27243!3d48.628645!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4739184425c85de1%3A0x6ac38631959897e8!2sRyljejeva+St%2C+4%2C+Uzhhorod%2C+Zakarpats&#39;ka+oblast%2C+Ukraine%2C+88000!5e0!3m2!1sen!2sus!4v1558356613140!5m2!1sen!2sus"
                             width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
